@@ -1,0 +1,17 @@
+﻿
+@model IEnumerable<MSsite.Models.Achieve>
+
+<div>
+<ul>
+    @foreach (var Achieve in Model)
+    {
+
+
+        <li>
+            @(Achieve.Descr + " " )
+        </li>
+    }
+
+</ul>
+
+    </div>

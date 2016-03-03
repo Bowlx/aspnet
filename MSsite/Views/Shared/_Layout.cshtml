@@ -1,0 +1,28 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>_Layout</title>
+    <style>
+    body {
+    background-color: #5f9ea0
+    }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>@Html.ActionLink("Home", "Index", "Home")</li>
+        <li>@Html.ActionLink("Достижения", "Achieves", "Home")</li>
+        <li>@Html.ActionLink("Дизайн", "Design", "About")</li>
+        <li>@Html.ActionLink("Meow", "Meows", "About")</li>
+    </ul>
+    <div>
+        @RenderBody();
+    </div>
+</body>
+</html>
